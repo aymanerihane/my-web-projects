@@ -1,0 +1,124 @@
+*{
+    transition: all 0.6s;
+}
+body{
+    overflow:hidden;
+}
+/* main page */
+p{
+    text-align: center;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin: 100px 10px 0 10px;
+    
+}
+
+
+button{
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+/* list */
+.div1{
+    background-color: #E9F5DB;
+    border: 1px solid #000;
+    height: 647px;
+    border-radius: 10px;
+    width: 40%;
+    overflow: scroll;
+}
+
+span{
+    cursor: pointer;
+}
+.text{
+    cursor:alias;
+}
+li:hover::first-line{
+    text-decoration: underline;
+}
+
+ol li:not(ul li ){
+    list-style: none;
+    font-size: large;
+}
+.first{
+    counter-reset: one;
+}
+.two{
+    counter-reset: two;
+}
+
+.first>li::before{
+    counter-increment: one;
+    content: counter(one,upper-roman);
+}
+.two>li::before{
+    counter-increment: two;
+    content: counter(one,upper-roman)'.' counter(two) ' ';
+}
+
+.active::first-line{
+    background-color: #97A97C;
+    
+    color: red;
+}   
+
+
+
+
+/* table */
+
+table{
+    
+    text-align: center;
+    border-spacing: 10px;
+}
+img{
+    position: relative;
+    height: 22.8em;
+    width: 30em;
+}
+td{
+ height: 60%;
+
+}
+
+.description{
+    border: 1px solid #000;
+    height: 100px;
+    padding: 10px;
+    overflow: scroll;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.div2{
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 364px;
+}
+.contain{
+    background-color: #97A97C;
+    height: 647px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 4px 4px #747474;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    overflow: hidden;
+}
+
+
